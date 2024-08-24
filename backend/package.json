@@ -1,9 +1,9 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "end to end",
