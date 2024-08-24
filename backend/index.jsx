@@ -4,7 +4,7 @@ const port = 5000;
 
 // Middleware for CORS
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173"); // Adjust the port as necessary
+    res.setHeader("Access-Control-Allow-Origin", "go-food-git-master-rohits-projects-659dc18b.vercel.app"); // Adjust the port as necessary
     res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     next();
