@@ -4,7 +4,7 @@ const app = express();
 
 // Middleware for CORS
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://go-food-git-master-rohits-projects-659dc18b.vercel.app"); // Adjust the origin as necessary
+    res.setHeader("Access-Control-Allow-Origin", "https://go-food-hr7w.vercel.app/"); // Adjust the origin as necessary
     res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     next();
