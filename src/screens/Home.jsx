@@ -11,7 +11,7 @@ export default function Home() {
   // Load food items and categories from API
   const loadFoodItems = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/auth/foodData", {
+      let response = await fetch("https://go-food-inxp.vercel.app/api/auth/foodData", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
