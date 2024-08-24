@@ -141,6 +141,9 @@ router.post('/orderData', async (req, res) => {
 router.post('/myOrderData', async (req, res) => {
     try {
         let orderData = await Order.findOne({ email: req.body.email });
+        if (!orderData) {
+            return res.status(404).json({ msg: "No orders found" });
+        }
         res.json({ orderData });
     } catch (error) {
         console.error(error.message);
