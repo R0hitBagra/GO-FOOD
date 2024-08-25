@@ -7,7 +7,7 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         try {
-            const res = await fetch("https://backend-1-0yci.onrender.com/api/auth/myOrderData", {
+            const res = await fetch("https://backend-2-vloj.onrender.com/api/auth/myOrderData", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

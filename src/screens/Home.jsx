@@ -11,7 +11,7 @@ export default function Home() {
   // Load food items and categories from API
   const loadFoodItems = async () => {
     try {
-      let response = await fetch("https://backend-1-0yci.onrender.com/api/auth/foodData", {
+      let response = await fetch("https://backend-2-vloj.onrender.com/api/auth/foodData", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
