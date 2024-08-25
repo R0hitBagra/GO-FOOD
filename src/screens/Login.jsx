@@ -9,7 +9,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://backend-2-vloj.onrender.com/api/auth/login", {
+      const response = await fetch("https://backend-3-bx1o.onrender.com/api/auth/login", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: credentials.email, password: credentials.password })
