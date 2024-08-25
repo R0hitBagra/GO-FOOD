@@ -21,7 +21,7 @@ export default function Signup() {
     // console.log(latlong)
     let [lat, long] = latlong
     console.log(lat, long)
-    const response = await fetch("http://localhost:10000/api/auth/getlocation", {
+    const response = await fetch("https://backend-1-0yci.onrender.com/api/auth/getlocation", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
