@@ -34,11 +34,12 @@ export default function Cart() {
     }
   };
 
+  // Total price is calculated by multiplying per-unit price with qty
   let totalPrice = data.reduce((total, food) => total + food.price * food.qty, 0);
 
   return (
     <div>
-      <div className='container m-auto mt-5 table-responsive  table-responsive-sm table-responsive-md'>
+      <div className='container m-auto mt-5 table-responsive table-responsive-sm table-responsive-md'>
         <table className='table table-hover'>
           <thead className='text-success fs-4'>
             <tr>
@@ -57,6 +58,7 @@ export default function Cart() {
                 <td>{food.name}</td>
                 <td>{food.qty}</td>
                 <td>{food.size}</td>
+                {/* Only multiply the price by qty here */}
                 <td>₹{food.price * food.qty}/-</td>
                 <td>
                   <button type="button" className="btn p-0" onClick={() => dispatch({ type: "REMOVE", index: index })}>
