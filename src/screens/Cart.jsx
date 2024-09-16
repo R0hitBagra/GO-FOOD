@@ -59,7 +59,7 @@ export default function Cart() {
                 <td>{food.qty}</td>
                 <td>{food.size}</td>
                 {/* Multiply the unit price by the quantity */}
-                <td>₹{food.price * food.qty}/-</td>
+                <td>₹{food.price}/-</td>
                 <td>
                   <button type="button" className="btn p-0" onClick={() => dispatch({ type: "REMOVE", index: index })}>
                     <DeleteIcon />
