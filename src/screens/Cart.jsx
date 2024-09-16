@@ -35,7 +35,7 @@ export default function Cart() {
   };
 
   // Calculate the total price by multiplying the per-unit price with the quantity
-  let totalPrice = data.reduce((total, food) => total + food.price * food.qty, 0);
+  let totalPrice = data.reduce((total, food) => total + food.price , 0);
 
   return (
     <div>
