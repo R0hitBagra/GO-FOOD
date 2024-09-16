@@ -6,7 +6,7 @@ const CartDispatchContext = createContext();
 const reducer = (state, action) => {
     switch (action.type) {
         case "ADD": {
-            // Ensure the price added here is per unit, not already multiplied by qty
+            // Make sure to store the price per unit, not the total price
             return [...state, { id: action.id, name: action.name, qty: action.qty, size: action.size, price: action.price, img: action.img }];
         }
         case "REMOVE": {
@@ -21,7 +21,7 @@ const reducer = (state, action) => {
             let arr = [...state];
             arr.find((food, index) => {
                 if (food.id === action.id) {
-                    // Only update the quantity here, don't touch the price
+                    // Only update the quantity, price should remain per unit
                     arr[index] = { ...food, qty: parseInt(action.qty) + food.qty };
                 }
                 return arr;
